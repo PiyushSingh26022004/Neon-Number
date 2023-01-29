@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Enter a Number "; 
+     cin>>n;
+    
+    int s=n*n;
+    int sum=0;
+    while(s>0)
+    {
+        int r=s%10;
+     
+        //sum=sum+r;
+        sum+=r;
+        s=s/10;
+     
+    }
+    if(sum==n) 
+    cout << n<< " is Neon number ";
+    else 
+     cout<<n<<" is not Neon number ";
+    return 0;
+}
